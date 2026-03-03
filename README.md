@@ -15,7 +15,7 @@ The objective was to answer 30 analytical business qyestions using SQL queries.<
 CREATE DATABASE Policee_Case; <br>
 USE Police_Case; <br>
 Main table used:
-- criminal_database <br>
+- criminal_data <br>
 ## 🔍 Key SQL Skills Demonstrated <br>
 - SELECT statements
 - WHERE filtering
@@ -31,7 +31,7 @@ Main table used:
 SELECT TOP 1 <br>
 COUNT (RecordID) AS Number_of_Cases,<br>
 Province <br>
-FROM criminal_database <br>
+FROM criminal_data <br>
 GROUP BY Province <br>
 ORDER BY Number_of_Cases DESC; <br>
 
@@ -39,21 +39,28 @@ ORDER BY Number_of_Cases DESC; <br>
 SELECT <br>
 SUM (EstimatedFraudAmount_ZAR) AS Total_Estimated_Fraud_Amount,<br>
 Province <br>
-FROM criminal_database <br>
+FROM criminal_data <br>
 GROUP BY Province <br>
 
 ## ⚖️ Arrested vs Not Arrested Distrubution <br>
 SELECT <br>
 COUNT (RecordID) AS Number_of_Suspects,<br>
 Arrested <br>
-FROM criminal_database <br>
+FROM criminal_data <br>
 GROUP BY Arrested <br>
 ## 🏆Most Common Crime Type <br>
 SELECCT TOP 1 <br>
 COUNT (RecordID) AS Number_of_Cases, <br>
 CrimeType <br>
-FROM criminal_database <br>
+FROM criminal_data <br>
 ORDER BY Number_of_Cases DESC;
+
+## 📊Key Insight <br>
+- Northern Cape recorded the highest number of criminal cases. <br>
+- Cybercrime was the most common crime type. <br>
+- High risk cases accounted for 3.3% of total fraud amount. <br>
+- The conviction rate analysis shows 21.7% of cases resulted in conviction.
+
 
 
 
