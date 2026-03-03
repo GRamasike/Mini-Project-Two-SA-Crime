@@ -28,11 +28,31 @@ Main table used:
   
 ## 📈 Insights <br>
 ## 🥇 Province with the Highest Number of Cases
-SELECT TOP 1
-COUNT (RecordID) AS Number_of_Cases,
-Province
-FROM criminal_database
-GROUP BY Province
+SELECT TOP 1 <br>
+COUNT (RecordID) AS Number_of_Cases,<br>
+Province <br>
+FROM criminal_database <br>
+GROUP BY Province <br>
+ORDER BY Number_of_Cases DESC; <br>
+
+## 💰Total Estimated Fraud Amount per Province
+SELECT <br>
+SUM (EstimatedFraudAmount_ZAR) AS Total_Estimated_Fraud_Amount,
+Province <br>
+FROM criminal_database <br>
+GROUP BY Province <br>
+
+## ⚖️ Arrested vs Not Arrested Distrubution <br>
+SELECT <br>
+COUNT (RecordID) AS Number_of_Suspects,<br>
+Arrested <br>
+FROM criminal_database <br>
+GROUP BY Arrested <br>
+## 🏆Most Common Crime Type <br>
+SELECCT TOP 1 <br>
+COUNT (RecordID) AS Number_of_Cases, <br>
+CrimeType <br>
+FROM criminal_database <br>
 ORDER BY Number_of_Cases DESC;
 
 
