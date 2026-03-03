@@ -10,6 +10,7 @@ The database stores criminal case records including:<br>
 - Arrest status <br>
 - Case status <br>
 - Investigating officer <br>
+
 The objective was to answer 30 analytical business qyestions using SQL queries.<br>
 ## 📁 Database Setup <br>
 CREATE DATABASE Policee_Case; <br>
