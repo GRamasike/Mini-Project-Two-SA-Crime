@@ -37,7 +37,7 @@ ORDER BY Number_of_Cases DESC; <br>
 
 ## 💰Total Estimated Fraud Amount per Province
 SELECT <br>
-SUM (EstimatedFraudAmount_ZAR) AS Total_Estimated_Fraud_Amount,
+SUM (EstimatedFraudAmount_ZAR) AS Total_Estimated_Fraud_Amount,<br>
 Province <br>
 FROM criminal_database <br>
 GROUP BY Province <br>
