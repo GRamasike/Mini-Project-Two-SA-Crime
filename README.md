@@ -16,6 +16,7 @@ The objective was to answer 30 analytical business qyestions using SQL queries.<
 CREATE DATABASE Policee_Case; <br>
 USE Police_Case; <br>
 Main table used:
+
 - criminal_data <br>
 ## 🔍 Key SQL Skills Demonstrated <br>
 - SELECT statements
