@@ -1,2 +1,40 @@
 # Mini-Project-Two-SA-Crime <br>
 ## 📌Project Overview <br>
+This project involves building and querying a South African Criminal Case database using SQL Server. <br>
+The database stores criminal case records including:<br>
+- Suspect details <br>
+- Crime Type <br>
+- Risk level <br>
+- Estimated fraud amount (ZAR) <br>
+- Province <br>
+- Arrest status <br>
+- Case status <br>
+- Investigating officer <br>
+The objective was to answer 30 analytical business qyestions using SQL queries.<br>
+## 📁 Database Setup <br>
+CREATE DATABASE Policee_Case; <br>
+USE Police_Case; <br>
+Main table used:
+- criminal_database <br>
+## 🔍 Key SQL Skills Demonstrated <br>
+- SELECT statements
+- WHERE filtering
+- GROUP BY
+- Aggregate functions (COUNT,SUM,AVG,MAX,MIN)
+- Subqueries
+- ORDER BY and TOP
+- Data type casting
+- Date functions <br>
+  
+## 📈 Insights <br>
+## 🥇 Province with the Highest Number of Cases
+SELECT TOP 1
+COUNT (RecordID) AS Number_of_Cases,
+Province
+FROM criminal_database
+GROUP BY Province
+ORDER BY Number_of_Cases DESC;
+
+
+
+
